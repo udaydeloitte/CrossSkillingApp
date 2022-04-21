@@ -33,8 +33,8 @@ public class BaseClass {
             driver=new ChromeDriver();
         }
         driver.manage().window().maximize();
-//        JavascriptExecutor js = (JavascriptExecutor) driver;
-//        js.executeScript("document.body.style.zoom='90%'");
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.body.style.zoom='90%'");
         driver.get(prop.getProperty("url"));
     }
 

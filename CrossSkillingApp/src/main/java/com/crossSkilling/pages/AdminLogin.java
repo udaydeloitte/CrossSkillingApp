@@ -28,9 +28,6 @@ public class AdminLogin extends BaseClass {
         Username.sendKeys(username);
         password.sendKeys(pswd);
         loginbtn.click();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("document.body.style.zoom='90%'");
-
     }
 
 }
