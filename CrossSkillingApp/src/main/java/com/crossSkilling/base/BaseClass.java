@@ -16,8 +16,7 @@ public class BaseClass {
     public BaseClass(){
         try{
             prop=new Properties();
-            FileInputStream ip=new FileInputStream("C:\\Users\\udayprsingh" +
-                    "\\IdeaProjects\\CrossSkillingApp\\src\\main\\java\\com\\crossSkilling\\config\\config.properties");
+            FileInputStream ip=new FileInputStream("src/main/java/com/crossSkilling/config/config.properties");
             prop.load(ip);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
